@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-ul{
+    font-family: 'Dancing Script', cursive;
+    list-style-type: none;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 30px;
+   
+}
+
+nav-ul:hover{
+    color: white;
+}
+
+.body-div1{
+    background-image: url(./images/avenue-815297_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+
+}
+
+
+p {
+    font-family: 'Bangers', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+}
