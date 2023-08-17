@@ -12,7 +12,7 @@ index = my_tup.index("Slovakia")
 print (index)
 
 
-#Given the code below, write code in order to perform tuple assignment on line 3 and obtain the results below.
+#Given the code below, write code in order to perform tuple assignment and obtain the results below.
 my_tup = ("Romania", "Poland", "Estonia")
 
 
