@@ -1,18 +1,20 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border: 10px;
 }
 .nav-ul{
     font-family: 'Dancing Script', cursive;
     list-style-type: none;
     border-radius: 10px;
     background-color: orange;
-    padding: 30px;
+    padding: 10px;
    
 }
 
@@ -22,7 +24,7 @@ nav-ul:hover{
 
 .body-div1{
     background-image: url(./images/avenue-815297_1280.jpg);
-    height: 100vh;
+    height: 89.4vh;
     background-size: cover;
     
 
@@ -33,4 +35,8 @@ p {
     font-family: 'Bangers', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'Lobster', cursive;
+}
+
+.article-img {
+    
 }
