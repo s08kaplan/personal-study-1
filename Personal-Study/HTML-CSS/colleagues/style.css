@@ -2,6 +2,128 @@
     margin: 0;
     padding: 0;
 }
+
+#top{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header a{
+    /* text-align: center; */
+    text-decoration: none;
+}
+
+.nefis{
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.79);
+}
+
+.search{
+    width: 500px;
+}
+
+.tarif{
+    border: 30px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
 .div-header{
     margin: 20px;
     display: flex;
@@ -18,6 +140,9 @@
        padding: 20px;
        
 }}
+.div-header span{
+    text-align: left;
+}
 
 .site{
     /* position: fixed; */
@@ -30,4 +155,4 @@
 }
 .form{
     margin: 25px;
-    
+     */
