@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(https://media.istockphoto.com/id/1296450286/tr/foto%C4%9Fraf/bulan%C4%B1k-mutfak-odas%C4%B1-saya%C3%A7-arka-plan-ah%C5%9Fap-masa-%C3%BCst%C3%BC.jpg?s=612x612&w=0&k=20&c=xzrfIdnZ3cbDZH4ehi4Sunf2f90BjzKx_j9sblJKHRA=);
+    background-size: cover;
+    background-position:top;
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* height: 80px;
+    margin: 40px; */
+}
+
+.logo {
+    font-size: 35px;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+span {
+    color: red;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: .3s;
+
+
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    float: right;
+   
+    /* justify-content: space-between; */
+    
+}
+
+ul li  {
+    text-decoration: none;
+    list-style: none;
+    
+}
