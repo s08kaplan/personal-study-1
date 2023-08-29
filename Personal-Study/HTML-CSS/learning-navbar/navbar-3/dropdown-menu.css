@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dropdown {
+    background-color: paleturquoise;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo {
+    color: coral;
+    font-size: 30px; 
+}
+
+.logo span {
+    color: blueviolet;
+}
+
+.dropdown ul {
+    list-style: none;
+    display: flex;
+}
+
+.dropdown ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.dropdown ul li a {
+    color: orange;
+    text-decoration: none;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.dropdown ul li a:hover {
+    color: blueviolet;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: blueviolet;
+}
+
+.dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
