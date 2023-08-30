@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-image: url(https://media.istockphoto.com/id/1456242777/photo/modern-japandi-mock-up-room-interior-design-and-decoration-with-green-pastel-counter-and.webp?b=1&s=612x612&w=0&k=20&c=_c6kuQtXBBz7hOcJCckR9xoo8X8gJ7kM5qZ7PCgL59w=);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-bar {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.menu-bar ul li:hover {
+    background-color: orchid;
+    border-radius: 5px;
+}
+
+.submenu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    background-color: blanchedalmond;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.menu-bar ul li:hover .submenu-1 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted cornflowerblue;
+    background: transparent;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li a:hover {
+    color: blueviolet;
+}
+
+.submenu-2 {
+    display: none;
+}
+
+.submenu-2:hover ul {
+    position: absolute;
+    display: block;
+    margin: 5px;
+}
+
+.submenu-2:hover ul li a:hover{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted cornflowerblue;
+    background: transparent;
+    text-align: left;
+}
+}
