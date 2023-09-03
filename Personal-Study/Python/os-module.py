@@ -22,3 +22,7 @@ print(os.getcwd())
 os.chdir(r"\Users\HP\Desktop\personal study\Personal-Study\Python\from-internet")
 print(os.getcwd())
 print(os.listdir())
+print(os.stat("first_try").st_atime)
+from datetime import datetime
+time = datetime.fromtimestamp(os.stat("first_try").st_atime)
+print(time)
