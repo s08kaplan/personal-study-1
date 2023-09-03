@@ -19,5 +19,6 @@ for folder in os.listdir():
 
 
 print(os.getcwd())
-os.chdir("\Users\HP\Desktop\personal study\Personal-Study\Python\from-internet")
-#print(os.getcwd())
+os.chdir(r"\Users\HP\Desktop\personal study\Personal-Study\Python\from-internet")
+print(os.getcwd())
+print(os.listdir())
