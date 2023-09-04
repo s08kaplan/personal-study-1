@@ -29,7 +29,7 @@
                 console.log(calculation);
             ">3</button></td>
             <td><button onclick="
-                calculation + cxalculation ;
+                calculation += ' + ' ;
             ">+</button></td>
         </tr>
         <tr>
@@ -50,7 +50,7 @@
                 console.log(calculation);
             ">6</button></td>
             <td><button onclick="
-                 calculation - calculation;
+                 calculation += ' - ';
             ">-</button></td>
         </tr>
         <tr>
@@ -71,7 +71,7 @@
                 console.log(calculation);
             ">9</button></td>
             <td><button onclick="
-               calculation * calculation;
+               calculation += ' * ';
             ">*</button></td>
         </tr>
         <tr>
@@ -82,19 +82,19 @@
 
 
             <td><button onclick="
-              calculation += '.';
+              calculation += ' . ';
                 console.log(calculation);
             ">.</button></td>
 
 
             <td><button onclick="
-              calculation += '=';
-                console.log(calculation);
+              calculation = eval(calculation);
+              console.log(calculation);
             ">=</button></td>
 
 
             <td><button onclick="
-              calculation += '/';
+              calculation += ' / ';
                 console.log(calculation);
             ">/</button></td>
              
