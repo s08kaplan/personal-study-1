@@ -13,6 +13,7 @@ body {
 .menu-bar {
     background-color: blanchedalmond;
     text-align: center;
+    background: transparent;
 }
 
 .menu-bar ul {
@@ -25,6 +26,7 @@ body {
     width: 120px;
     margin: 15px;
     padding: 15px;
+    transition: .5s;
 
 }
 
@@ -44,7 +46,7 @@ body {
 .menu-bar ul li:hover .submenu-1 {
     display: block;
     position: absolute;
-    background-color: blanchedalmond;
+    background:transparent;
     margin-top: 15px;
     margin-left: -30px;
 }
@@ -57,7 +59,7 @@ body {
 .menu-bar ul li:hover .submenu-1 ul li {
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted cornflowerblue;
+    border-bottom: 1px ;
     background: transparent;
     text-align: left;
 }
@@ -68,23 +70,28 @@ body {
 
 .menu-bar ul li:hover .submenu-1 ul li a:hover {
     color: blueviolet;
+    background-color: coral;
+    padding: 10px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.menu-bar ul li .submenu-2 ul li:hover {
+    display: block;
 }
 
 .submenu-2 {
-    display: none;
-}
+     display: none; 
+} 
 
-.submenu-2:hover ul {
-    position: absolute;
-    display: block;
-    margin: 5px;
-}
 
-.submenu-2:hover ul li a:hover{
+.submenu-2 ul li a:hover {
     width: 150px;
     padding: 10px;
     border-bottom: 1px dotted cornflowerblue;
     background: transparent;
     text-align: left;
+    display: block;
+    margin-left: -3opx;
 }
 
