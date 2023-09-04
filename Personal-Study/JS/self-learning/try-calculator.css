@@ -1,0 +1,13 @@
+table,tr {
+    border: 50px solid grey ;
+    
+    
+}
+
+tr {
+    padding: 100%;
+}
+
+button {
+    padding: 30px;
+}
