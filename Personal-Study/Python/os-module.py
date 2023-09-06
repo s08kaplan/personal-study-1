@@ -1,4 +1,4 @@
-import os
+'''import os
 print(os.getcwd()) # shows us which folder are we working on
 # os.chdir()  # to change directory
 #print(os.listdir()) shows us what we have in folder
@@ -25,4 +25,5 @@ print(os.listdir())
 print(os.stat("first_try").st_atime)
 from datetime import datetime
 time = datetime.fromtimestamp(os.stat("first_try").st_atime)
-print(time)
+print(time)'''
+
