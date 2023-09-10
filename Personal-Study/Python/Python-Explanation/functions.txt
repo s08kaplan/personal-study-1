@@ -1,0 +1,256 @@
+PYTHON-İSTİHZA.YAZBEL.COM dan alınan önemli notlar
+
+max()
+--------------------
+Size şöyle bir soru sorduğumu düşünün: Acaba aşağıdaki listede yer alan sayıların en büyüğü kaçtır?
+
+[882388, 260409, 72923, 692476, 131925, 259114, 47630, 84513, 25413, 614654,
+ 239479, 299159, 175488, 345972, 458112, 791030, 243610, 413702, 565285,
+ 773607, 131583, 979177, 247202, 615485, 647512, 556823, 242460, 852928,
+ 893126, 792435, 273904, 544434, 627222, 601984, 966446, 384143, 308858,
+ 915106, 914423, 826315, 258342, 188056, 934954, 253918, 468223, 262875,
+ 462902, 370061, 336521, 367829, 147846, 838385, 605377, 175140, 957437,
+ 105779, 153499, 435097, 9934, 435761, 989066, 357279, 341319, 420455,
+ 220075, 28839, 910043, 891209, 975758, 140968, 837021, 526798, 235190,
+ 634295, 521918, 400634, 385922, 842289, 106889, 742531, 359913, 842431,
+ 666182, 516933, 22222, 445705, 589281, 709098, 48521, 513501, 277645,
+ 860937, 655966, 923944, 7895, 77482, 929007, 562981, 904166, 619260,
+ 616293, 203512, 67534, 615578, 74381, 484273, 941872, 110617, 53517,
+ 402324, 156156, 839504 , 625325, 694080, 904277, 163914, 756250, 809689,
+ 354050, 523654, 26723, 167882, 103404, 689579, 121439, 158946, 485258,
+ 850804, 650603, 717388, 981770, 573882, 358726, 957285, 418479, 851590,
+ 960182, 11955, 894146, 856069, 369866, 740623, 867622, 616830, 894801,
+ 827179, 580024, 987174, 638930, 129200, 214789, 45268, 455924, 655940,
+ 335481, 845907, 942437, 759380, 790660, 432715, 858959, 289617, 757317,
+ 982063, 237940, 141714, 939369, 198282, 975017, 785968, 49954, 854914,
+ 996780, 121633, 436419, 471, 776271, 91626, 209175, 894281, 417963, 624464,
+ 736535, 418888, 506194, 591087, 64075, 50252, 952943, 25878, 217085,
+ 223996, 416042, 484123, 810460, 423284, 956886, 237772, 960241, 601551,
+ 830147, 449088, 364567, 337281, 524358, 980387, 393760, 619710, 100181,
+ 96738, 275199, 553783, 975654, 662536, 979103, 869504, 702350, 174361,
+ 970250, 267625, 661580, 444662, 871532, 881977, 981660, 446047, 508758,
+ 530694, 608789, 339540, 242774, 637473, 874011, 732999, 511638, 744144,
+ 710805, 641326, 88085, 128487, 59732, 739340, 443638, 830333, 832136,
+ 882277, 403538, 441349, 721048, 32859]
+İşte böyle bir soruyu çözmek için max() fonksiyonundan yararlanabilirsiniz. Yukarıdaki listeyi sayılar adlı bir değişkene atadığımızı varsayarsak, aşağıdaki kod bize listedeki en büyük sayıyı verecektir:
+
+max(sayılar)
+Yukarıdaki örneklerde max() fonksiyonunu kullanarak bir dizi içindeki en büyük sayıyı bulduk. Peki bu fonksiyonu kullanarak bir dizi içindeki en uzun karakter dizisini bulabilir miyiz? Evet, bulabiliriz.
+
+Diyelim ki elimizde şöyle bir liste var:
+
+isimler = ["ahmet", "mehmet", "necla", "sedat", "abdullah",
+           "gıyaseddin", "sibel", "can", "necmettin", "savaş", "özgür"]
+Amacımız bu liste içindeki en uzun kelimeyi bulmak. İşte bunu max() fonksiyonu ile yapabiliriz. Dikkatlice bakın:
+
+print(max(isimler, key=len))
+Bu kodları çalıştırdığımızda, listedeki en uzun isim olan ‘gıyaseddin’i elde edeceğiz.
+
+Gördüğünüz gibi, max() fonksiyonu key adlı özel bir parametre daha alıyor. Bu parametreye biz ‘len’ değerini verdik. Böylece max() fonksiyonu liste içindeki öğeleri uzunluklarına göre sıralayıp en uzun öğeyi bize sundu.
+
+
+sum()
+------------------------
+Bu fonksiyon bir dizi içinde yer alan bütün sayıları birbiriyle toplar. Örneğin:
+
+a = [10, 20, 43, 45 , 77, 2, 0, 1]
+sum(a)
+198
+
+Eğer bu fonksiyonun, toplama işlemini belli bir sayının üzerine gerçekleştirmesini istiyorsanız şu kodu yazabilirsiniz:
+
+sum(a, 10)
+208
+
+sum() fonksiyonuna bu şekilde ikinci bir parametre verdiğinizde, bu ikinci parametre toplam değere eklenecektir.
+
+
+
+
+Temel Dosya İşlemleri
+----------------------
+
+Dosya Oluşturmak
+Dediğimiz gibi, Python programlama dilinde dosya işlemleri için open() adlı bir fonksiyondan yararlanacağız. İşte dosya oluşturmak için de bu fonksiyonu kullanacağız.
+
+Önceki derslerimizde verdiğimiz örneklerden de bildiğiniz gibi, open() fonksiyonunu temel olarak şöyle kullanıyoruz:
+
+f = open(dosya_adı, kip)
+
+Mesela “tahsilat.txt” adlı bir dosyayı yazma kipinde açmak için şöyle bir komut kullanıyoruz:
+
+tahsilat_dosyası = open("tahsilat_dosyası.txt", "w")
+Burada ‘tahsilat_dosyası.txt’ ifadesi dosyamızın adını belirtiyor. “w” harfi ise bu dosyanın yazma kipinde açıldığını söylüyor.
+
+Yukarıdaki komutu çalıştırdığınızda, o anda hangi dizin altında bulunuyorsanız o dizin içinde tahsilat_dosyası.txt adlı boş bir dosyanın oluştuğunu göreceksiniz.
+
+Bu arada, dosya adını yazarken, dosya adı ile birlikte o dosyanın hangi dizin altında oluşturulacağını da belirleyebilirsiniz. Örneğin:
+
+dosya = open("/dosyayı/oluşturmak/istediğimiz/dizin/dosya_adı", "w")
+Eğer dosya adını dizin belirtmeden yazarsanız, oluşturduğunuz dosya, o anda hangi dizin altında bulunuyorsanız orada oluşacaktır.
+
+Ayrıca dosyayı barındıran dizin adlarını yazarken, dizinleri ayırmak için ters taksim (\) yerine düz taksim (/) kullanmaya dikkat edin. Aksi halde, dizin adı oluşturmaya çalışırken yanlışlıkla kaçış dizileri oluşturabilirsiniz. Esasında siz bu olguya hiç yabancı değilsiniz. Zira kaçış dizilerini anlatırken şöyle bir örnek verdiğimizi hatırlıyor olmalısınız:
+
+print("C:\aylar\nisan\toplam masraf")
+İşte eğer bu örnekte olduğu gibi ters taksim işaretleri ile oluşturulmuş dizin adları kullanırsanız programınız hata verecektir:
+
+open("C:\aylar\nisan\toplam masraf\masraf.txt", "w")
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OSError: [Errno 22] Invalid argument: 'C:\x07ylar\nisan\toplam masraf\masraf.txt'
+Bunun sebebi, bildiğiniz gibi, Python’ın \a, \n ve \t ifadelerini birer kaçış dizisi olarak algılamasıdır. Bu durumdan kaçabilmek için, dizin adlarını ters taksim işareti ile ayırmanın dışında, r adlı kaçış dizisinden de yararlanabilirsiniz:
+
+open(r"C:\aylar\nisan\toplam masraf\masraf.txt", "w")
+…veya ters taksim işaretlerini çiftleyebilirsiniz:
+
+open("C:\\aylar\\nisan\\toplam masraf\\masraf.txt", "w")
+Bu şekilde, eğer bilgisayarınızda C:\aylar\nisan\toplam masraf\ adlı bir dizin varsa, o dizin içinde masraf.txt adlı bir dosya oluşturulacaktır.
+
+Böylece Python programlama dilinde boş bir dosyanın nasıl oluşturulacağını öğrenmiş olduk. O halde gelin isterseniz şimdi bu dosyanın içini nasıl dolduracağımızı öğrenelim.
+
+
+Dosyaya Yazmak
+---------------------
+Bir dosyayı, yukarıda gösterdiğimiz şekilde yazma kipinde açtığımız zaman, Python bizim için içi boş bir dosya oluşturacaktır. Peki biz bu dosyanın içini nasıl dolduracağız?
+
+Python programlama dilinde, open() fonksiyonu ile yazma kipinde açtığımız bir dosyaya bir veri yazabilmek için dosyaların write() adlı metodundan yararlanacağız.
+
+Siz aslında bu metodun da nasıl kullanılacağını çok iyi biliyorsunuz:
+
+dosya.write(yazılacak_şeyler)
+Gelin bu formülü somutlaştıracak bir örnek verelim. Mesela yukarıda oluşturduğumuz tahsilat dosyasının içine bazı veriler girelim.
+
+Önce dosyamızı nasıl oluşturacağımızı hatırlayalım:
+
+ths = open("tahsilat_dosyası.txt", "w")
+Şimdi de bu dosyaya şu bilgileri girelim:
+
+ths.write("Halil Pazarlama: 120.000 TL")
+Yani programımız şöyle görünsün:
+
+ths = open("tahsilat_dosyası.txt", "w")
+ths.write("Halil Pazarlama: 120.000 TL")
+Bu komutları verdiğinizde, tahsilat_dosyası.txt adlı dosyanın içine şu bilgilerin işlendiğini göreceksiniz:
+
+Halil Pazarlama: 120.000 TL
+Eğer dosyayı açtığınızda bu bilgi yerine hâlâ boş bir dosya görüyorsanız, sebebi tamponda tutulan verilerin henüz dosyaya işlenmemiş olmasıdır.
+
+
+Eğer durum böyleyse, dosyanızı kapatmanız gerekiyor. Bunu close() adlı başka bir metotla yapabildiğimizi biliyorsunuz:
+
+ths.close()
+Bu arada, bu söylediklerimizden, eğer yazdığınız bilgiler zaten dosyaya işlenmişse dosyayı kapatmanıza gerek olmadığı anlamını çıkarmayın. Herhangi bir şekilde açtığınız dosyaları kapatmanız, özellikle dosyanın açılmasıyla birlikte kullanılmaya başlayan ve arka planda çalışan kaynakların serbest bırakılması açısından büyük önem taşıyor. O yüzden açtığımız dosyaların tamamını programın işleyişi sona erdiğinde kapatmayı unutmuyoruz. Yani yukarıdaki programı tam olarak şöyle yazıyoruz:
+
+ths = open("tahsilat_dosyası.txt", "w")
+ths.write("Halil Pazarlama: 120.000 TL"),
+ths.close()
+Bu kodlarda sırasıyla şu işlemleri gerçekleştirdik:
+
+tahsilat_dosyası adlı bir dosyayı yazma kipinde açarak, bu adda bir dosya oluşturulmasını sağladık,
+
+write() metodunu kullanarak bu dosyaya bazı bilgiler girdik,
+
+Dosyamıza yazdığımız bilgilerin dosyaya işlendiğinden emin olmak ve işletim sisteminin dosyanın açılması ve dosyaya veri işlenmesi için devreye soktuğu bütün kaynakları serbest bırakmak için close() metoduyla programımızı kapattık.
+
+Bu arada, bu başlığı kapatmadan önce önemli bir bilgi daha verelim. Python’da bir dosyayı “w” kipinde açtığımızda, eğer o adda bir dosya ilgili dizin içinde zaten varsa, Python bu dosyayı sorgusuz sualsiz silip, yerine aynı adda başka bir boş dosya oluşturacaktır. Yani mesela yukarıda tahsilat_dosyası.txt adlı dosyayı oluşturup içine bir şeyler yazdıktan sonra bu dosyayı yine “w” kipinde açmaya çalışırsanız, Python bu dosyanın bütün içeriğini silip, yine tahsilat_dosyası.txt adını taşıyan başka bir dosya oluşturacaktır. O yüzden dosya işlemleri sırasında bu “w” kipini kullanırken dikkat ediyoruz ve disk üzerinde var olan dosyalarımızı yanlışlıkla silmiyoruz.
+
+Böylece bir dosyanın nasıl oluşturulacağını, nasıl açılacağını ve içine birtakım bilgilerin nasıl girileceğini kabataslak da olsa öğrenmiş olduk. Şimdi de dosyaları nasıl okuyacağımızı öğrenelim.
+
+Dosya Okumak
+--------------------
+Bir önceki başlıkta dosyaların içine bilgi girme işleminin Python programlama dilinde nasıl yapıldığını inceledik. Elbette bir dosyaya yazabilmenin yanısıra, bilgisayarınızda halihazırda var olan bir dosyayı okumak da isteyeceksiniz. Peki bunu nasıl yapacaksınız?
+
+Python’da bir dosyayı okumak için yukarıda anlattığımız yazma yöntemine benzer bir yöntem kullanacağız. Bildiğiniz gibi, bir dosyayı yazma kipinde açmak için “w” harfini kullanıyoruz. Bir dosyayı okuma kipinde açmak için ise “r” harfini kullanacağız.
+
+Mesela, bilgisayarımızda var olan fihrist.txt adlı dosyayı okumak üzere açalım:
+
+fihrist = open("fihrist.txt", "r")
+Bir dosyayı open() fonksiyonu yardımıyla açarken kip parametresi için “r” harfini kullanırsak, Python o dosyayı okuma yetkisiyle açacaktır. Yalnız burada şöyle bir özellik var: Eğer bir dosyayı okuma kipinde açacaksanız, bu “r” harfini hiç belirtmeseniz de olur. Yani şu komut bilgisayarımızdaki fihrist.txt adlı dosyayı okuma kipinde açacaktır:
+
+fihrist = open("fihrist.txt")
+Dolayısıyla bir dosyayı açarken kip belirtmediğimizde Python bizim o dosyayı okuma kipinde açmak istediğimizi varsayacaktır.
+
+Hatırlarsanız, “w” kipiyle açtığımız bir dosyaya yazmak için write() adlı bir metottan yararlanıyorduk. “r” kipiyle açtığımız bir dosyayı okumak için ise read(), readline() ve readlines() adlı üç farklı metottan yararlanacağız.
+
+Yukarıdaki üç metot da Python’da dosya okuma işlemlerini gerçekleştirmemizi sağlar. Peki bu metotların üçü de aynı işi yapıyorsa neden tek bir metot değil de üç farklı metot var?
+
+Bu metotların üçü de dosya okumaya yarasa da, verdikleri çıktılar birbirinden farklıdır. O yüzden farklı amaçlar için farklı metodu kullanmanız gereken durumlarla karşılaşabilirsiniz.
+
+Bu metotlar arasındaki farkı anlamanın en kolay yolu bu üç metodu sırayla kullanıp, çıktıları incelemektir.
+
+Öncelikle içeriği şu olan, fihrist.txt adlı bir dosyamızın olduğunu varsayalım:
+
+Ahmet Özbudak : 0533 123 23 34
+Mehmet Sülün  : 0532 212 22 22
+Sami Sam      : 0542 333 34 34
+Şimdi bir dosya açıp şu kodları yazalım:
+
+fihrist = open("fihrist.txt")
+print(fihrist.read())
+Bu kodları çalıştırdığımızda, eğer kullandığınız işletim sistemi GNU/Linux ise muhtemelen şu çıktıyı elde edeceksiniz:
+
+Ahmet Özbudak : 0533 123 23 34
+Mehmet Sülün  : 0532 212 22 22
+Sami Sam      : 0542 333 34 34
+Ama eğer bu kodları Windows’ta çalıştırdıysanız Türkçe karakterler bozuk çıkmış olabilir. Bu durumu şimdilik görmezden gelin. Birazdan bu durumun nedenini açıklayacağız.
+
+Yukarıda elde ettiğimiz şey bir karakter dizisidir bunu şu şekilde teyit edebileceğinizi biliyorsunuz:
+
+fihrist = open("fihrist.txt")
+print(type(fihrist.read()))
+Gördüğünüz gibi, read() metodu bize, dosyanın bütün içeriğini bir karakter dizisi olarak veriyor. Bir de şuna bakalım:
+
+fihrist = open("fihrist.txt")
+print(fihrist.readline())
+Burada da readline() metodunu kullandık. Bu kodlar bize şöyle bir çıktı veriyor:
+
+Ahmet Özbudak : 0533 123 23 34
+read() metodu bize dosya içeriğinin tamamını veriyordu. Gördüğünüz gibi readline() metodu tek bir satır veriyor. Yani bu metot yardımıyla dosyaları satır satır okuyabiliyoruz.
+
+Bu metodun işleyiş tarzını daha iyi görebilmek için bu kodları dosyaya yazıp çalıştırmak yerine etkileşimli kabuk üzerinden de çalıştırabilirsiniz:
+
+fihrist = open("fihrist.txt", "r")
+print(fihrist.readline())
+
+Ahmet Özbudak : 0533 123 23 34
+
+print(fihrist.readline())
+
+Mehmet Sülün  : 0532 212 22 22
+
+print(fihrist.readline())
+
+Sami Sam      : 0542 333 34 34
+Gördüğünüz gibi, readline() metodu gerçekten de dosyayı satır satır okuyor.
+
+Son satırı da okuduktan sonra, readline() metodunu tekrar çalıştırırsak ne olur peki? Bakalım:
+
+print(fihrist.readline())
+Gördüğünüz gibi, bu defa hiçbir çıktı almadık. Çünkü dosyada okunacak satır kalmadı. Bu yüzden de Python bize boş bir çıktı verdi. Bu durumu daha net görmek için kodu etkileşimli kabukta print() olmadan yazabilirsiniz:
+
+fihrist.readline()
+
+''
+Gerçekten de elimizdeki şey boş bir karakter dizisi… Demek ki bir dosya tamamen okunduktan sonra, Python otomatik olarak tekrar dosyanın başına dönmüyor. Böyle bir durumda dosyanın başına nasıl geri döneceğimizi inceleyeceğiz, ama isterseniz biz başka bir konuyla devam edelim.
+
+Bir dosyanın tamamı okunduktan sonra otomatik olarak başa sarılmaması özelliği sadece readline() metodu için değil, öteki bütün dosya okuma metotları için de geçerlidir. Yani bir dosyayı read(), readline() veya readlines() metotlarından herhangi biri ile okuduğunuzda imleç başa dönmez.
+Dediğimiz ve gösterdiğimiz gibi, read() ve readline() metotları bize bir karakter dizisi döndürüyor. Bu iki metot arasındaki fark ise, read() metodunun dosyanın tamamını önümüze sererken, readline() metodunun dosyayı satır satır okuyup, her defasında tek bir satırı önümüze sürmesidir. Bir de readlines() metodunun ne yaptığına bakalım…
+
+Şu kodları yazalım:
+
+fihrist = open("fihrist.txt")
+print(fihrist.readlines())
+Bu kodları yazdığımızda şuna benzer bir çıktı alacağız:
+
+['Ahmet Özbudak : 0533 123 23 34\n', 'Mehmet Sülün  : 0532 212 22 22\n',
+ 'Sami Sam      : 0542 333 34 34']
+Gördüğünüz gibi, bu defa karakter dizisi yerine bir liste ile karşılaşıyoruz. Demek ki read() ve readline() metotları çıktı olarak bize bir karakter dizisi verirken, readlines() metodu liste veriyormuş. Bunun neden önemli bir bilgi olduğunu artık gayet iyi biliyor olmanız lazım. Zira bir verinin tipi, o veriyle neler yapıp neler yapamayacağımızı doğrudan etkiler…
+
+Dosyaları Otomatik Kapatma
+-------------------------------
+Daha önce de söylediğimiz gibi, bir dosyayı açıp bu dosya üzerinde gerekli işlemleri yaptıktan sonra bu dosyayı açık bırakmamak büyük önem taşır. Dolayısıyla üzerinde işlem yaptığımız bütün dosyaları, işimiz bittikten sonra, mutlaka kapatmalıyız. Çünkü bir dosya açıldığında işletim sistemi, sistem kaynaklarının bir kısmını bu dosyaya ayırır. Eğer dosyayı açık bırakırsak, sistem kaynaklarını gereksiz yere meşgul etmiş oluruz. Ancak farklı sebeplerden, dosyalar açıldıktan sonra kapanmayabilir. Örneğin açtığınız dosyayı kapatmayı unutmuş olabilirsiniz. Yani programınızın hiçbir yerinde close() metodunu kullanmamışsınızdır. Bunun dışında, programınızdaki bir hata da dosyaların kapanmasını engelleyebilir. Örneğin bir dosya açıldıktan sonra programda beklenmeyen bir hata gerçekleşirse, programınız asla close() satırına ulaşamayabilir. Bu durumda da açılan dosya kapanmadan öylece bekler.
+
+with open("dosyaadı", "r") as dosya:
+    print(dosya.read())
+Dosyalarımızı bu şekilde açıp üzerlerinde işlemlerimizi yaptığımızda Python dosyayı bizim için kendisi kapatacaktır. Bu şekilde bizim ayrıca bir close() satırı yazmamıza gerek yok. with deyimini kullanmamız sayesinde, dosya açıldıktan sonra arada bir hata oluşsa bile Python dosyayı sağsalim kapatıp sistem kaynaklarının israf edilmesini önleyecektir.
