@@ -4,9 +4,7 @@
 }
 
 nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+   
     border: 10px;
 }
 .nav-ul{
@@ -15,6 +13,11 @@ nav{
     border-radius: 10px;
     background-color: orange;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background: transparent;
+    
    
 }
 
@@ -27,8 +30,8 @@ nav-ul:hover{
     height: 89.4vh;
     background-size: cover;
     
-
 }
+
 
 
 p {
