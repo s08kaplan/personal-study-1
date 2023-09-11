@@ -4,12 +4,15 @@
     grid-template-rows: 100px 100px 100px 100px;
     grid-template-columns: 100px 100px 100px 100px;
     gap: 10px;
+    border: 2px solid red;
+    justify-content: space-evenly;
+    
+    
 }
 .item-1 {
     background-color: aqua;
     text-align: center;
     padding: 40px;
-    
     
 }
 
@@ -21,6 +24,72 @@
 
 .item-3 {
     background-color: coral;
+    text-align: center;
+    padding: 40px;
+}
+
+.item-4 {
+    background-color:brown;
+    text-align: center;
+    padding: 40px;
+}
+.item-5 {
+    background-color: orchid;
+    text-align: center;
+    padding: 40px;
+}
+.item-6 {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 40px;
+}
+.item-7 {
+    background-color: tomato;
+    text-align: center;
+    padding: 40px;
+}
+.item-8 {
+    background-color: powderblue;
+    text-align: center;
+    padding: 40px;
+}
+.item-9 {
+    background-color:yellowgreen;
+    text-align: center;
+    padding: 40px;
+}
+.item-10 {
+    background-color: rgb(175, 137, 137);
+    text-align: center;
+    padding: 40px;
+}
+.item-11 {
+    background-color: rgb(84, 61, 53);
+    text-align: center;
+    padding: 40px;
+}
+.item-12 {
+    background-color: rgb(41, 132, 115);
+    text-align: center;
+    padding: 40px;
+}
+.item-13 {
+    background-color: rgb(179, 133, 201);
+    text-align: center;
+    padding: 40px;
+}
+.item-14 {
+    background-color: rgb(180, 207, 152);
+    text-align: center;
+    padding: 40px;
+}
+.item-15 {
+    background-color: rgb(166, 97, 104);
+    text-align: center;
+    padding: 40px;
+}
+.item-16 {
+    background-color: rgb(26, 120, 146);
     text-align: center;
     padding: 40px;
 }
