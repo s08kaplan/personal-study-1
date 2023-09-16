@@ -19,8 +19,8 @@ def guess(x):
     x = random.randint(1,100)
     user = 0
     counter = 0
-user_count
-    while counter <= 3:
+user_count 
+while counter <= 3:
       if not isinstance(user,int):
         print("Please enter a positive number : ")
         user = int(input("Please enter a positive integer : "))
