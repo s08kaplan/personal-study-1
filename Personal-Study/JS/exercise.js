@@ -24,3 +24,5 @@ const ab = {
 console.log(ab["a"]);
 ab["c"] = "jenny"
 console.log(ab["c"]);
+
+
